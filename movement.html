@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Movement</title>
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+function openLightbox(src){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = src;
+}
+function closeLightbox(){
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="portraits.html">Portraits</a>
+<a href="movement.html">Movement</a>
+<a href="street.html">Street</a>
+<a href="bts.html">BTS</a>
+<a href="events.html">Events</a>
+<a href="about.html">About</a>
+</nav>
+
+<h2 class="page-title">MOVEMENT</h2>
+
+<section class="gallery">
+
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20250910_100541.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_141128.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_150602.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_160446.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260327_174303_1.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_161009.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_232437.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_185742.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260327_184151.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_192944.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_190902.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260327_175254.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260327_184333.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_192256.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260327_181117_1.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260127_232644.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260128_093815.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260129_175301.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260129_161454.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260327_184110.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260317_190219.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260317_190558.jpg">
+<img onclick="openLightbox(this.src)" src="images/movement/IMG_20260317_191148.jpg">
+
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+<footer class="site-footer">
+<p>@photo.kohlert</p>
+<p>© 2026 Eliska Kohlert</p>
+</footer>
+
+</body>
+</html>

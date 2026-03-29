@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Eliska Kohlert – Film Photography</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="portraits.html">Portraits</a>
+<a href="movement.html">Movement</a>
+<a href="street.html">Street</a>
+<a href="bts.html">BTS</a>
+<a href="events.html">Events</a>
+<a href="about.html">About</a>
+</nav>
+
+<div class="content">
+{% block content %}{% endblock %}
+</div>
+
+{% include "_footer.html" %}
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+    <img id="lightbox-img">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    // OPEN
+    window.openLightbox = function(src){
+        lightbox.style.display = "flex";
+        lightboxImg.src = src;
+    }
+
+    // CLOSE
+    lightbox.addEventListener("click", function(){
+        lightbox.style.display = "none";
+    });
+
+});
+</script>
+
+</body>
+</html>

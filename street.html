@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Street</title>
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+function openLightbox(src){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = src;
+}
+function closeLightbox(){
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="portraits.html">Portraits</a>
+<a href="movement.html">Movement</a>
+<a href="street.html">Street</a>
+<a href="bts.html">BTS</a>
+<a href="events.html">Events</a>
+<a href="about.html">About</a>
+</nav>
+
+<h2 class="page-title">STREET</h2>
+
+<section class="gallery">
+
+<img onclick="openLightbox(this.src)" src="images/street/07.jpg">
+<img onclick="openLightbox(this.src)" src="images/street/0012.jpg">
+<img onclick="openLightbox(this.src)" src="images/street/IMG_20251206_205425.jpg">
+<img onclick="openLightbox(this.src)" src="images/street/IMG_20260203_225805.jpg">
+<img onclick="openLightbox(this.src)" src="images/street/0011.jpg">
+<img onclick="openLightbox(this.src)" src="images/street/IMG_20260203_225009.jpg">
+<img onclick="openLightbox(this.src)" src="images/street/0jkeBgog.jpeg">
+<img onclick="openLightbox(this.src)" src="images/street/IMG_20260204_122127.jpg">
+<img onclick="openLightbox(this.src)" src="images/street/IMG_20260204_131616.jpg">
+<img onclick="openLightbox(this.src)" src="images/street/IMG_20250625_184315.jpg">
+
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+<footer class="site-footer">
+<p>@photo.kohlert</p>
+<p>© 2026 Eliska Kohlert</p>
+</footer>
+
+</body>
+</html>
+

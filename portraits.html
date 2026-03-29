@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portraits</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="portraits.html">Portraits</a>
+<a href="movement.html">Movement</a>
+<a href="street.html">Street</a>
+<a href="bts.html">BTS</a>
+<a href="events.html">Events</a>
+<a href="about.html">About</a>
+</nav>
+
+<h2 class="page-title">PORTRAITS</h2>
+
+<section class="gallery">
+
+<img onclick="openLightbox(this.src)" src="images/portraits/002.png">
+<img onclick="openLightbox(this.src)" src="images/portraits/008.jpg">
+<img onclick="openLightbox(this.src)" src="images/portraits/15.jpg">
+<img onclick="openLightbox(this.src)" src="images/portraits/0015.jpg">
+<img onclick="openLightbox(this.src)" src="images/portraits/020.png">
+<img onclick="openLightbox(this.src)" src="images/portraits/IMG_20251202_104605.jpg">
+<img onclick="openLightbox(this.src)" src="images/portraits/IMG_20251207_183723_1.jpg">
+<img onclick="openLightbox(this.src)" src="images/portraits/IMG_20251207_213304.jpg">
+<img onclick="openLightbox(this.src)" src="images/portraits/IMG_20251223_113933.png">
+<img onclick="openLightbox(this.src)" src="images/portraits/IMG_20260204_125824.jpg">
+<img onclick="openLightbox(this.src)" src="images/portraits/IMG_20260204_131204.jpg">
+
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(src){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src=src;
+}
+function closeLightbox(){
+document.getElementById("lightbox").style.display="none";
+}
+</script>
+
+</body>
+</html>

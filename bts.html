@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Behind the Scenes</title>
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+function openLightbox(src){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = src;
+}
+function closeLightbox(){
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="portraits.html">Portraits</a>
+<a href="movement.html">Movement</a>
+<a href="street.html">Street</a>
+<a href="bts.html">BTS</a>
+<a href="events.html">Events</a>
+<a href="about.html">About</a>
+</nav>
+
+<h2 class="page-title">BEHIND THE SCENES</h2>
+
+<section class="gallery">
+
+<img onclick="openLightbox(this.src)" src="images/bts/18.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20260327_175539.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/09.png">
+<img onclick="openLightbox(this.src)" src="images/bts/13.png">
+<img onclick="openLightbox(this.src)" src="images/bts/006.png">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20260327_171638.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/17.pnG">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20251206_213654.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20260327_180845.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20251214_211804.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20260327_181502.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20260127_131132.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20251214_211804.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20260327_180028.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20260129_141455.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20251206_213611.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20260327_180944.jpg">
+<img onclick="openLightbox(this.src)" src="images/bts/IMG_20260129_180020.jpg">
+
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+<footer class="site-footer">
+<p>@photo.kohlert</p>
+<p>© 2026 Eliska Kohlert</p>
+</footer>
+
+</body>
+</html>

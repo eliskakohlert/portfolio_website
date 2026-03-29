@@ -1,0 +1,340 @@
+/* RESET + BASE */
+
+html, body {
+height: 100%;
+margin: 0;
+}
+
+body {
+background: black;
+color: white;
+font-family: Helvetica, Arial, sans-serif;
+padding-top: 80px;
+overflow-x: hidden;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+/* NAV */
+
+nav {
+position: fixed;
+top: 0;
+width: 100%;
+background: black;
+border-bottom: 1px solid #222;
+padding: 20px 0;
+text-align: center;
+z-index: 1000;
+}
+
+nav a {
+color: white;
+margin: 0 20px;
+text-decoration: none;
+letter-spacing: 3px;
+text-transform: uppercase;
+font-size: 13px;
+}
+
+nav a:hover {
+opacity: 0.5;
+}
+
+/* HERO */
+
+.hero {
+height: 100vh;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+overflow: hidden;
+}
+
+.hero::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
+background:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+url("../images/movement/unnamed.png");
+
+/* KEY FIX — enables horizontal movement */
+background-size: 160% auto;
+
+/* CONTROL POSITION HERE */
+background-position: -2% 65%;
+
+background-repeat: no-repeat;
+filter: grayscale(100%);
+z-index: -2;
+}
+
+/* FILM GRAIN */
+
+.hero::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: url("https://grainy-gradients.vercel.app/noise.svg");
+opacity: 0.08;
+z-index: -1;
+}
+
+/* HERO TEXT */
+
+.hero-text {
+z-index: 2;
+}
+
+.hero h1 {
+font-size: 42px;
+letter-spacing: 8px;
+margin-bottom: 10px;
+}
+
+.hero p {
+font-size: 13px;
+letter-spacing: 3px;
+color: #ccc;
+}
+
+/* TITLES */
+
+.page-title {
+text-align: center;
+font-size: 30px;
+letter-spacing: 6px;
+margin: 60px 0 20px 0;
+}
+
+/* GALLERY */
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+padding: 40px;
+}
+
+.gallery img {
+width: 100%;
+height: 400px;
+object-fit: cover;
+filter: grayscale(100%);
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+.gallery img:hover {
+transform: scale(1.05);
+filter: grayscale(0%);
+}
+
+/* LIGHTBOX */
+
+#lightbox {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.95);
+justify-content: center;
+align-items: center;
+z-index: 2000;
+}
+
+#lightbox img {
+max-width: 90%;
+max-height: 90%;
+}
+
+/* EVENTS */
+
+.events-container {
+max-width: 900px;
+margin: auto;
+padding: 40px;
+}
+
+.event {
+border-bottom: 1px solid #222;
+padding: 30px 0;
+}
+
+.event.past {
+opacity: 0.5;
+}
+
+/* ABOUT */
+
+.about-wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+max-width: 1100px;
+margin: auto;
+padding: 80px 40px;
+align-items: center;
+}
+
+.about-image img {
+width: 100%;
+filter: grayscale(100%);
+box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.about-text {
+font-size: 15px;
+line-height: 1.8;
+color: #ddd;
+}
+
+.about-text .highlight {
+color: white;
+font-weight: 600;
+}
+
+/* FOOTER — FIXED */
+
+.site-footer {
+text-align: center;
+padding: 20px;
+font-size: 12px;
+color: #777;
+border-top: 1px solid #222;
+}
+
+/* PREVENT CONTENT HIDING BEHIND FOOTER */
+
+body::after {
+content: "";
+display: block;
+height: 60px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+.about-wrapper {
+grid-template-columns: 1fr;
+}
+
+.hero h1 {
+font-size: 28px;
+}
+
+.gallery {
+padding: 20px;
+}
+
+}
+
+/* ONLY ABOUT PAGE — FIXED FOOTER */
+
+.about-page {
+min-height: calc(100vh - 80px); /* account for nav */
+display: flex;
+flex-direction: column;
+}
+
+.about-page .site-footer {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background: black;
+}
+
+/* TESTIMONIALS — FULL WIDTH TICKER */
+
+.testimonials {
+margin: 100px 0 40px 0;
+overflow: hidden;
+position: relative;
+}
+
+/* TRUE FULL WIDTH BREAKOUT */
+.testimonials.full-width {
+position: relative;
+left: 50%;
+right: 50%;
+margin-left: -50vw;
+margin-right: -50vw;
+width: 100vw;
+}
+
+.testimonials-title {
+text-align: center;
+font-size: 14px;
+letter-spacing: 4px;
+margin-bottom: 30px;
+color: #888;
+text-transform: uppercase;
+}
+
+.testimonial-ticker {
+width: 100%;
+overflow: hidden;
+}
+
+.testimonial-track {
+display: flex;
+gap: 80px;
+white-space: nowrap;
+width: max-content;
+animation: scroll 90s linear infinite;
+}
+
+.testimonial-track span {
+font-size: 14px;
+color: #ccc;
+letter-spacing: 1px;
+}
+
+/* ANIMATION */
+
+@keyframes scroll {
+0% {
+transform: translateX(0);
+}
+100% {
+transform: translateX(-50%);
+}
+}
+
+/* EDGE FADE */
+
+.testimonials::before,
+.testimonials::after {
+content: "";
+position: absolute;
+top: 0;
+width: 100px;
+height: 100%;
+z-index: 2;
+pointer-events: none;
+}
+
+.testimonials::before {
+left: 0;
+background: linear-gradient(to right, black, transparent);
+}
+
+.testimonials::after {
+right: 0;
+background: linear-gradient(to left, black, transparent);
+}
