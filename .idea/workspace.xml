@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf4884be-1911-4919-952b-743329dce0b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/google16e454738b4ecb93.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bts.html" beforeDir="false" afterPath="$PROJECT_DIR$/bts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,18 +54,18 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/eliskakohlert/Desktop/CODING/portfolio_website/static/images/movement",
+    "last_opened_file_path": "/Users/eliskakohlert/Desktop/CODING/portfolio_website",
     "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static/images/movement" />
       <recent name="$PROJECT_DIR$/static/images/bts" />
       <recent name="$PROJECT_DIR$/static/images/street" />
       <recent name="$PROJECT_DIR$/static/images/portraits" />
-      <recent name="$PROJECT_DIR$/static/images/profile" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -129,7 +129,7 @@
       <workItem from="1773961025925" duration="697000" />
       <workItem from="1774303987624" duration="761000" />
       <workItem from="1774380928440" duration="4341000" />
-      <workItem from="1774811436765" duration="15863000" />
+      <workItem from="1774811436765" duration="17456000" />
     </task>
     <servers />
   </component>
@@ -137,6 +137,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/portfolio_website$app.coverage" NAME="app Coverage Results" MODIFIED="1774828607223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/portfolio_website$app.coverage" NAME="app Coverage Results" MODIFIED="1774829046638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
